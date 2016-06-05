@@ -1,1 +1,1 @@
-var flickrApp = angular.module('flickrApp', [])
+var flickrApp = angular.module('flickrApp', []);
