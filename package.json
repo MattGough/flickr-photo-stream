@@ -1,5 +1,5 @@
 {
-  "name": "flickrApp",
+  "name": "flickr-app",
   "private": true,
   "version": "0.0.0",
   "description": "A web app for displaying Flickr photos",
