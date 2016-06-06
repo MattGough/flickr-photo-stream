@@ -12,14 +12,17 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-controller="PhotoListCtrl" ng-init="getPhotoList()">
-
+  <h1><span class="pink">flickr</span>PhotoStream</h1>
+  
   <ul class="photos">
     <li ng-repeat="photo in photos">
-     <img src="{{photo.media.m}}" class="image">
-     <br>
-     <a href="{{photo.link}}" class="title">{{photo.title}}</a> by <a class="author" href="https://flickr.com/people/{{photo.author_id}}">{{photo.author_name}}</a>
+      <img src="{{photo.media.m}}" class="image" ng-click="showDetails = ! showDetails">
+      <div ng-show="showDetails" class"extra-details">
+        <a href="{{photo.link}}" class="title">{{photo.title}}</a> by <a class="author" href="https://flickr.com/people/{{photo.author_id}}">{{photo.author_name}}</a>
+      </div>
     </li>
   </ul>
 

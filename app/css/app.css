@@ -1,0 +1,39 @@
+body {
+ text-align: center;
+ font-family: sans-serif;
+ background-color: #D2D2D2;
+ color: #0062DD;
+}
+
+h1 {
+  font-size: 400%;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: #0062DD;
+}
+
+a:hover, a:active {
+    color: #FF0084;
+}
+
+ul {
+  width: 90%;
+}
+
+li {
+  display: inline-block;
+  vertical-align: top;
+  color: #0062DD;
+  width: 280px;
+}
+
+.image {
+  padding: 10px;
+}
+
+.pink {
+  color: #FF0084;
+}
