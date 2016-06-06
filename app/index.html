@@ -18,7 +18,7 @@
   <ul class="photos">
     <li ng-repeat="photo in photos">
      <img src="{{photo.media.m}}" class="image">
-     <p>{{photo.title}}</p>
+     <a href="{{photo.link}}" class="title">{{photo.title}}</a>
     </li>
   </ul>
 
