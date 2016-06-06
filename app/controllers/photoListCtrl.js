@@ -10,6 +10,11 @@ flickrApp.controller('PhotoListCtrl', ['$scope', '$http', function($scope, $http
         data = data.replace(/\\'/g, "'");
         data = JSON.parse(data);
       }
+
+      for (var i = 0; i < data.items.length; i++ ) {
+        var string = data.items[i].author
+        data.items[i].author_name = string.replace('nobody@flickr.com (', '').slice(0,-1);
+      }
       $scope.photos = data.items;
     });
   }

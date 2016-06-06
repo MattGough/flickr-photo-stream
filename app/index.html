@@ -18,7 +18,8 @@
   <ul class="photos">
     <li ng-repeat="photo in photos">
      <img src="{{photo.media.m}}" class="image">
-     <a href="{{photo.link}}" class="title">{{photo.title}}</a>
+     <br>
+     <a href="{{photo.link}}" class="title">{{photo.title}}</a> by <a class="author" href="https://flickr.com/people/{{photo.author_id}}">{{photo.author_name}}</a>
     </li>
   </ul>
 

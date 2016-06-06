@@ -18,5 +18,11 @@ describe ('flickrApp', function() {
       element(by.className('title')).click();
       expect(browser.driver.getCurrentUrl()).toMatch('https://www.flickr.com');
     });
+
+    it ('should display the author for each post as a link', function() {
+      browser.get('/');
+      element(by.className('author')).click();
+      expect(browser.driver.getCurrentUrl()).toMatch('https://www.flickr.com');
+    });
   });
 });
