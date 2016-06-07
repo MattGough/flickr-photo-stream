@@ -5,7 +5,10 @@
   "description": "A web app for displaying Flickr photos",
   "repository": "https://github.com/MattGough/flickr-photo-stream",
   "license": "MIT",
-  "dependencies": {"bower": "^1.7.7"},
+  "dependencies": {
+    "bower": "^1.7.7",
+    "express": "^14.13.4"
+  },
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
