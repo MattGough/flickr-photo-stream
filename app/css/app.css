@@ -12,11 +12,11 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #0062DD;
+  color: grey;
 }
 
 a:hover, a:active {
-    color: #FF0084;
+    color: black;
 }
 
 ul {
@@ -26,14 +26,35 @@ ul {
 li {
   display: inline-block;
   vertical-align: top;
-  color: #0062DD;
-  width: 280px;
+  color: grey;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-style: italic;
 }
 
-.image {
-  padding: 10px;
+input {
+  height: 38px;
+  width: 345px;
+  color: #0062DD;
+  font-size: 120%;
+  font-weight: lighter;
+  border-radius: 3px;
+  border-style: hidden;
+  margin-bottom: 50px;
+}
+
+.image:hover {
+  border: solid;
+  border-color: grey;
+  border-radius: 2px;
 }
 
 .pink {
   color: #FF0084;
+}
+
+.searching {
+  padding-left: 25px;
+  color: #2196F3;
 }
