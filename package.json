@@ -7,7 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "bower": "^1.7.7",
-    "express": "latest"
+    "express": "latest",
+    "cors-anywhere": "0.4.0"
   },
   "devDependencies": {
     "bower": "^1.7.7",
