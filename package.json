@@ -8,7 +8,7 @@
   "dependencies": {
     "bower": "^1.7.7",
     "cors-anywhere": "0.4.0",
-    "express": "14.13.4"
+    "express": "4.13.4"
   },
   "devDependencies": {
     "bower": "^1.7.7",
