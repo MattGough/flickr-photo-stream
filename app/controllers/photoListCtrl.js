@@ -3,7 +3,7 @@
 flickrApp.controller('PhotoListCtrl', ['$scope', '$http', function($scope, $http) {
 
   $scope.getPhotoList = function() {
-    $http.get('http://localhost:8080/https://api.flickr.com/services/feeds/photos_public.gne?format=json').success(function(data) {
+    $http.get('https://api.flickr.com/services/feeds/photos_public.gne?format=json').success(function(data) {
 
       if (typeof data === "string" ) {
         data = data.replace('jsonFlickrFeed(', '').replace('})', '}')
